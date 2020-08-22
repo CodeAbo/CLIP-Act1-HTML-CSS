@@ -165,7 +165,10 @@ img {
 
 /* Footer*/
 .site-footer {
+    height: 10vh;
     margin: 0;
+    align-items: center;
+    
     background-color: #121212;
     display: flex;
     justify-content: space-between;
@@ -173,4 +176,62 @@ img {
 .copyright {
     color: #f9f9f9;
     padding-right: 5rem;
+}
+
+/*Contacto*/
+
+#one-colum-emphasis{
+    margin: 45px;
+    /*Especificaciones del ancho de la tabla*/
+    width: 480px;
+    text-align: left;
+    /*No deja espacio entre los reglones y columnas de la tabla*/
+    border-collapse: collapse;
+}
+#one-colum-emphasis caption{
+    font-size: 20px;
+}
+#one-colum-emphasis th{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 15px;
+    color: #039;
+}
+#one-colum-emphasis td{
+    padding: 10px 15px;
+    border-top: 1px solid #e8edff;
+}
+#one-colum-emphasis .col-izq {
+    color: #f9f9f9;
+}
+#one-colum-emphasis .col-der {
+    color: #121212;
+}
+.col-izq{
+    background: #343a40;
+    border-right: 10px solid transparent;
+    border-left:  10px solid transparent;
+}
+.col-der {
+    background-color: #f8f9fa;
+    color: #121212;
+}
+#one-colum-emphasis tr:hover .col-izq{
+    color: #121212;
+    background: #f8f9fa;
+}
+#one-colum-emphasis tr:hover .col-der{
+    color: #f8f9fa;
+    background: #343a40;
+}
+
+.mapa h2::before,
+.mapa h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .5rem;
+    background: #121212;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
