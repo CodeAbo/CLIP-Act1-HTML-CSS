@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instrumentos</title>
+    <link rel="stylesheet" href="css/normailze.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
-    <img src="img/logo1.png" alt="Logo">
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
 
-    <a href="index.html">Inicio</a>
-    <a href="tienda.html">Tienda</a>
-    <a href="contacto.html">Contacto</a>
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <a href="#istrumentos-destacados">
+                <p>Venta de Instrumentos al <span>mejor precio</span></p>
+            </a>
+        </div>
+    </header>
 
-    <p>Venta de Instrumentos al <span>mejor precio</span></p>
+    <main class="seccion contenedor">
+
+        <h2 id="istrumentos-destacados" class="fw-300 centrar-texto">Instrumentos destacados</h2>
+
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img src="img/guitarra acustica.png" alt="guitarra acustica">
+                <div class="contenido-anuncio">
+                    <h3>Guitarra Acustcia</h3>
+                    <p>Guitarra acustica profecional para conciertos de un tono cálido y suave</p>
+                    <p class="precio">$70000</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/bateria electrica.png" alt="bateria electrica">
+                <div class="contenido-anuncio">
+                    <h3>bateria Electrica</h3>
+                    <p>Bateria electrica de estudio. Modelo peglable, practico y rápido para transportar</p>
+                    <p class="precio">$130000</p>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/trompeta.png" alt="Trompeta">
+                <div class="contenido-anuncio">
+                    <h3>Trompeta Profesional</h3>
+                    <p>Campana de latón dorado hecha a mano de una sola piezas</p>
+                    <p class="precio">$245000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ver-mas">
+            <a href="tienda.html" class="boton boton-rojo">Ver Mas Instrumentos</a>
+        </div>
+    </main>
 
 
-    <p>Instrumentos destacados</p>
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>Encuentra tu instrumento ideal</h2>
+            <p>Por cualquier duda puedes llenar el formulario de contacto, y te contactaremos a la brevedad</p>
+            <div class="boton-medio">
+                <a href="contacto.html" class="boton">Contactános</a>
+            </div>
+        </div>
+    </section>
 
-    <img src="img/guitarra acustica.jpg" alt="guitarra acustica">
-    <h3>Guitarra Acustcia</h3>
-    <p>Guitarra acustica profecional para conciertos</p>
-    <p>$70000</p>
+    <footer class="site-footer seccion">
 
-    <img src="img/bateria electrica.jpg" alt="bateria electrica">
-    <h3>bateria Electrica</h3>
-    <p>Bateria electrica de estudio negra mate</p>
-    <p>$130000</p>
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
 
-    <img src="img/bajo.jpg" alt="bajo">
-    <h3>Bajo Electrico</h3>
-    <p>Bajo electrico de 4 cuerdas, incluye funda</p>
-    <p>$45000</p>
+        <p class="copyright">Todos los derechos reservados &copy;</p>
+    </footer>
 
-
-    <h2>Encuentra tu instrumento ideal</h2>
-    <p>Por cualquier duda puedes llenar el formulario de contacto, y te contactaremos a la brevedad</p>
-    <a href="contacto.html">Contactános</a>
 
 </body>
+
 </html>
