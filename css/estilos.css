@@ -179,7 +179,13 @@ img {
 }
 
 /*Contacto*/
-
+form {
+    display: flex;
+    justify-content: center;
+}
+table {
+    border: 2px solid #121212;
+}
 #one-colum-emphasis{
     margin: 45px;
     /*Especificaciones del ancho de la tabla*/
@@ -189,40 +195,29 @@ img {
     border-collapse: collapse;
 }
 #one-colum-emphasis caption{
-    font-size: 20px;
-}
-#one-colum-emphasis th{
-    font-size: 14px;
-    font-weight: normal;
-    padding: 12px 15px;
-    color: #039;
+    font-size: 3rem;
+    color: #121212;
 }
 #one-colum-emphasis td{
     padding: 10px 15px;
-    border-top: 1px solid #e8edff;
 }
 #one-colum-emphasis .col-izq {
     color: #f9f9f9;
-}
-#one-colum-emphasis .col-der {
-    color: #121212;
-}
-.col-izq{
+    border-top: 1px solid #e8edff;
     background: #343a40;
     border-right: 10px solid transparent;
     border-left:  10px solid transparent;
 }
-.col-der {
+#one-colum-emphasis .col-der {
+    color: #121212;
+    border-top: 1px solid #121212;
     background-color: #f8f9fa;
     color: #121212;
 }
-#one-colum-emphasis tr:hover .col-izq{
-    color: #121212;
-    background: #f8f9fa;
-}
-#one-colum-emphasis tr:hover .col-der{
+
+#one-colum-emphasis tr:hover td{
     color: #f8f9fa;
-    background: #343a40;
+    background: #121212;
 }
 
 .mapa h2::before,
