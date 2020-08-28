@@ -1,42 +1,59 @@
-
 html {
-    font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16px*/
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Reset para REMS - 62.5% = 10px de 16px*/
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
     color: #121212;
     background-color: #f8f9fa;
 }
+
 a {
     text-decoration: none;
 }
+
+
 /*utilidades*/
+
 .fw-300 {
     font-weight: 300;
 }
+
 .centrar-texto {
     text-align: center;
 }
+
+
 /* Globales */
+
 img {
     max-width: 100%;
 }
+
 .contenedor {
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
 }
+
 .seccion {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
+
 /* Botonoes*/
+
 .boton {
     color: #f9f9f9;
     background-color: #d52b1e;
@@ -44,67 +61,111 @@ img {
     border-radius: 1rem;
     text-decoration: none;
     font-weight: 900;
+    display: block;
+    flex: 0 0 100%;
+    text-align: center;
 }
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
 .boton:hover {
     background-color: #008827;
 }
+
 .ver-mas {
     display: flex;
     justify-content: flex-end;
 }
 
+.boton-medio {
+    display: flex;
+    justify-content: center;
+}
+
+
 /*Header*/
+
 .site-header {
     background-color: #222222;
     padding: 1rem 0 3rem 0;
 }
+
 .site-header.inicio {
     background-image: url(../img/fondo\ inicio.jpg);
     background-position: center center;
     background-size: cover;
     height: 100vh;
 }
-.contenido-header{
+
+.contenido-header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
 }
-.barra{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.barra {
     padding-top: 3rem;
 }
-.navegacion a{
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navegacion a {
     color: #f9f9f9;
     font-size: 2.5rem;
     font-weight: 400;
     padding-right: 2rem;
     text-transform: uppercase;
+    display: block;
+    text-align: center;
 }
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline;
+    }
+}
+
 .navegacion a:last-of-type {
     padding-right: 0;
 }
+
 .navegacion a:hover {
     color: #C70808;
 }
+
 .contenido-header p {
     color: #ffffff;
     font-size: 3rem;
     font-weight: 700;
     padding-bottom: 5rem;
 }
-.contenido-header p:hover { /*No es un boton pero pintaba esa*/
+
+.contenido-header p:hover {
+    /*No es un boton pero pintaba esa*/
     color: #C70808;
 }
 
+
 /* Productos */
 
-.contenedor-productos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .contenedor-productos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .producto {
@@ -114,6 +175,7 @@ img {
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .contenido-anuncio {
     padding: 1rem;
     display: flex;
@@ -128,86 +190,108 @@ img {
     text-align: center;
 }
 
+
 /* Contacto */
 
-.imagen-contacto{
+.imagen-contacto {
     background-image: url(../img/imagen\ contacto.jpg);
     background-position: center center;
-    height: 40vh;
     display: flex;
     align-items: center;
     margin-top: 5rem;
 }
+
+@media (min-width: 768px) {
+    .imagen-contacto {
+        height: 40vh;
+    }
+}
+
 .contenido-contacto {
     color: #C70808;
 }
+
 .contenido-contacto h2 {
     margin: 0;
     font-weight: 900;
     font-size: 5rem;
 }
+
 .contenido-contacto p {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 5rem;
 }
-.contenido-contacto h2, 
+
+.contenido-contacto h2,
 .contenido-contacto p {
     background: #ffffff7c;
     border-radius: 2rem;
     text-align: center;
 }
 
-.boton-medio{
-    display: flex;
-    justify-content: center;
-}
 
 /* Footer*/
+
 .site-footer {
     height: 10vh;
     margin: 0;
     align-items: center;
-    
     background-color: #121212;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
+
+@media (min-width: 768px) {
+    .site-footer {
+        justify-content: space-between;
+    }
+}
+
+.contenedor-footer {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: block;
+    }
+}
+
 .copyright {
     color: #f9f9f9;
     padding-right: 5rem;
 }
 
+
 /*Contacto*/
-form {
-    display: flex;
-    justify-content: center;
+
+form tr td {
+    display: block;
 }
+
 table {
     border: 2px solid #121212;
+    width: 100%;
 }
-#one-colum-emphasis{
-    margin: 45px;
-    /*Especificaciones del ancho de la tabla*/
-    width: 480px;
-    text-align: left;
-    /*No deja espacio entre los reglones y columnas de la tabla*/
-    border-collapse: collapse;
-}
-#one-colum-emphasis caption{
+
+#one-colum-emphasis caption {
     font-size: 3rem;
     color: #121212;
 }
-#one-colum-emphasis td{
+
+#one-colum-emphasis td {
     padding: 10px 15px;
 }
+
 #one-colum-emphasis .col-izq {
     color: #f9f9f9;
     border-top: 1px solid #e8edff;
     background: #343a40;
     border-right: 10px solid transparent;
-    border-left:  10px solid transparent;
+    border-left: 10px solid transparent;
 }
+
 #one-colum-emphasis .col-der {
     color: #121212;
     border-top: 1px solid #121212;
@@ -215,9 +299,39 @@ table {
     color: #121212;
 }
 
-#one-colum-emphasis tr:hover td{
+#one-colum-emphasis tr:hover td {
     color: #f8f9fa;
     background: #121212;
+}
+
+#one-colum-emphasis {
+    text-align: center;
+}
+
+.botones-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+    form {
+        display: flex;
+        justify-content: center;
+    }
+    table {
+        border: 2px solid #121212;
+    }
+    #one-colum-emphasis {
+        margin: 4.5rem;
+        /*Especificaciones del ancho de la tabla*/
+        width: 63rem;
+        text-align: left;
+        /*No deja espacio entre los reglones y columnas de la tabla*/
+        border-collapse: collapse;
+    }
+    textarea {
+        width: 59rem;
+    }
 }
 
 .mapa h2::before,
@@ -229,4 +343,8 @@ table {
     background: #121212;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.mapa iframe {
+    width: 100%;
 }
